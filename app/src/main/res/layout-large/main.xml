@@ -1,0 +1,122 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root_view"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/background_main" >
+   
+    <!-- <codebhak.jigsaw.puzzle.kids.CTFrameLayout -->
+
+    <LinearLayout
+        android:id="@+id/btnPrev1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true" >
+
+        <Button
+            android:id="@+id/btnPrev"
+            android:layout_width="80dp"
+            android:layout_height="100dp"
+            android:background="@drawable/prev_selector" />
+    </LinearLayout>
+
+    <com.faarentie.adinkra.jigsaw.CTFrameLayout
+        android:id="@+id/fr_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:id="@+id/ll_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical">
+            
+            <ScrollView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                
+            
+             <TextSwitcher
+                android:id="@+id/adinkra_desc"
+                android:layout_width="255dp"
+                android:layout_height="228dp"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="textMultiLine" 
+                android:background="#07000000"
+                android:padding="20dp"
+                android:textColor="#000000"
+                android:layout_margin="30dp"
+                android:text="Audax has a big heart"
+                      
+               />
+			</ScrollView>
+            <ImageView
+                android:id="@+id/fix_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:gravity="right"            
+                android:layout_marginBottom="40dp"
+                android:contentDescription="@string/puzzlelayout"
+                android:src="@drawable/ba_layout" />
+
+            <LinearLayout
+                android:id="@+id/btnNext1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center_vertical" >
+
+                <Button
+                    android:id="@+id/btnNext"
+                    android:layout_width="80dp"
+                    android:layout_height="100dp"
+                    android:background="@drawable/next_selector" />
+            </LinearLayout>
+        </LinearLayout>
+        
+        <ImageView
+            android:id="@+id/img_showWord"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="100dp"
+            android:layout_marginBottom="20dp"
+            android:contentDescription="@string/puzzledone"
+            android:src="@drawable/ba"
+            android:visibility="gone"/>
+
+        <ImageView
+            android:id="@+id/imageView_home"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="bottom|right"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="40dp"
+            android:contentDescription="@string/homebutton"
+            android:src="@drawable/home_selector" />
+
+        <ImageView
+            android:id="@+id/imageView_reload"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="bottom|right"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="110dp"
+            android:contentDescription="@string/homebutton"
+            android:src="@drawable/reload_selector" />
+        
+        <ImageView
+            android:id="@+id/imageView_home1"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="bottom|right"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="40dp"
+            android:contentDescription="@string/homebutton"
+            android:src="@drawable/home_selector"
+            android:visibility="gone" />
+    </com.faarentie.adinkra.jigsaw.CTFrameLayout>
+
+</RelativeLayout>

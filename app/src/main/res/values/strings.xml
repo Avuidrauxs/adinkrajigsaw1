@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Adinkra Jigsaw Puzzle</string>
+    <string name="uri_more_app">http://faarentie.com</string>
+    <string name="uri_app_link">http://faarentie.com</string>
+    <string name="uri_app_rate">http://faarentie.com</string>
+
+	<string name="homebutton">Home button - Go to home  screen</string>
+	<string name="puzzlelayout">Puzzle layout</string>
+	<string name="puzzledone">Puzzle completion layout</string>
+	</resources>
